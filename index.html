@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>オセロ (Othello)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>オセロ</h1>
+    <div class="controls">
+      <div>現在の手番: <span id="current-player">黒</span></div>
+      <div>黒: <span id="score-black">2</span>  白: <span id="score-white">2</span></div>
+      <label><input type="checkbox" id="vs-ai" checked> コンピュータと対戦 (白)</label>
+      <button id="restart">リスタート</button>
+    </div>
+    <div id="board" class="board"></div>
+    <div id="message" class="message"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

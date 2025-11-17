@@ -91,6 +91,7 @@ function render(){
       }
       cell.dataset.x = i; cell.dataset.y = j;
       cell.addEventListener('click', onCellClick);
+      cell.addEventListener('touchstart', onCellClick, {passive:true});
       boardEl.appendChild(cell);
     }
   }
